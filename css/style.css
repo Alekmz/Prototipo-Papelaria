@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(243, 243, 243, 0.4);
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+    color: rgb(68, 68, 68);
+    font-size:1.2em;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    /*cor abaixo para o menu clean*/
+   color: #333333; 
+    /* color: #fff; */
+    margin-top: 25px;
+    margin-right: 5px;
+    letter-spacing: 0.4rem;
+}
