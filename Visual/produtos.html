@@ -5,20 +5,18 @@
   <meta charset="UTF-8">
   <title>Produtos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+  <link rel="shortcut icon" href="../../v3programação/Visual/favicon.ico" type="image/x-icon" />
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../../v3programação/Visual/css/style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand h1 mb-0 mr-3" href="index.html">
-        <img class="mb-2 mr-3" src="image/logo.png" width="40" height="40" alt="">
+      <a class="navbar-brand h1 mb-0 mr-3" href="../../v3programação/Visual/index.html">
+        <img class="mb-2 mr-3" src="../../v3programação/Visual/image/logo.png" width="40" height="40" alt="">
         Papelaria Magnos</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
         <span class="navbar-toggler-icon"></span>
@@ -26,38 +24,22 @@
       <div class="collapse navbar-collapse" id="navbarSite">
         <ul class="navbar-nav mr-auto mb-1">
           <li class="nav-item">
-            <a class="nav-link " href="index.html">Início</a>
+            <a class="nav-link " href="../../v3programação/Visual/index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="produtos.html">Produtos</a>
+            <a class="nav-link" href="../../v3programação/Visual/produtos.html">Produtos</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="buscas.html">Buscar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="assinaturas.html">Assinaturas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pedidos.html">Pedidos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="filial.html">Filial</a>
+            <a class="nav-link" href="../../v3programação/Visual/assinaturas.html">Assinaturas</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Categorias
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Artes</a>
-              <a class="dropdown-item" href="#">Embalagens</a>
-              <div class="dropdown-divider"></div>
-            </div>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre nós</a>
+            <a class="nav-link" href="../../v3programação/Visual/filial.html">Filial</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../../v3programação/Visual/sobre.html">Sobre nós</a>
           </li>
           <ul class="navbar-nav ml-auto"></ul>
           <li class="nav-item dropdown">
@@ -65,13 +47,13 @@
               Contatos
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="contato.html">Entrar em contato</a>
-              <a class="dropdown-item" href="fornecedores.html">Fornecedor</a>
+              <a class="dropdown-item" href="../../v3programação/Visual/contato.html">Entrar em contato</a>
+              <a class="dropdown-item" href="../../v3programação/Visual/fornecedores.html">Fornecedor</a>
             </div>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <a class="nav-link" href="conta.html">
+          <a class="nav-link" href="../../v3programação/Controle/myaccount.php">
             Minha conta
           </a>
         </ul>
@@ -81,55 +63,175 @@
   <div class="container">
     <div class="col-12 text-center my-5">
 
-      <h1 class="display-3 text-monospace">Nossos produtos!</h1>
-      s
+      <h1 class="display-3 text-monospace my-5">Nossos produtos!</h1>
 
     </div>
     <div class="container">
-      <div class="row text-center">
-      <div class="container card-md" style="width: 26.3rem;">
-        <img src="image/lapis.png" class="card-img-top" alt="..." height="400">
-        <div class="card-body">
-          <h3 class="card-title mx-auto"> Caixa de lápis </h3>
-          <p class="card-text"> Caixa Faber Castell com 12 lápis de cor e 3 lápis de grafite. Desenvolvidas visando
-            cores mais vivas e de excelente cobertura sobre papéis claros e escuros.</p>
-          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+      <div class="text-center">
+        <button class="btn btn-success filter-button" data-filter="all">Todas as Categorias</button>
+        <button class="btn btn-success filter-button" data-filter="school">Escolar</button>
+        <button class="btn btn-success filter-button" data-filter="office">Escritório</button>
+        <button class="btn btn-success filter-button" data-filter="writing">Escrita</button>
 
-        </div>
       </div>
-      <div class="container card-md" style="width: 26.3rem;">
-        <img src="image/agenda.jpg" class="card-img-top" alt="..." height="400">
-        <div class="card-body">
-          <h3 class="card-title mx-auto"> Agenda </h3>
-          <p class="card-text"> Agenda com design simples, para atender as necessidades do cotidiano. Anotações
-            escolares, compromissos profissionais ou até mesmo receitas culinárias.</p>
-          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+      <div class="row text-center my-1">
+        <div class="container card-md filter writing" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/lapis.png" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Caixa de lápis </h3>
+            <p class="card-text"> Caixa Faber Castell com 12 lápis de cor e 3 lápis de grafite. Desenvolvidas visando
+              cores mais vivas e de excelente cobertura sobre papéis claros e escuros.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
 
+          </div>
         </div>
-      </div>
-      <div class="container card-md" style="width: 26.3rem;">
-        <img src="image/borracha.jpg" class="card-img-top" alt="..." height="400">
-        <div class="card-body">
-          <h3 class="card-title mx-auto"> Borracha Faber Castell </h3>
-          <p class="card-text"> Borrachas Faber Castell, criadas com objetivo de maior rendimento na prática de apagar
-            erros de grafia. Acompanhadas com suportes, para evitar o acúmulo de resíduos.</p>
-          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+        <div class="container card-md filter school" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/agenda.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Agenda </h3>
+            <p class="card-text"> Agenda com design simples, para atender as necessidades do cotidiano. Anotações
+              escolares, compromissos profissionais ou até mesmo receitas culinárias.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
 
+          </div>
         </div>
-      </div>
-      <div class="container card-md" style="width: 26.3rem;">
-        <img src="image/apontador.jpg" class="card-img-top" alt="..." height="400">
-        <div class="card-body">
-          <h3 class="card-title mx-auto"> Apontador </h3>
-          <p class="card-text"> Apontador com a melhor qualidade e eficiência, possuindo também uma pequena reserva com
-            o objetivo de otimizar seu tempo.</p>
-          <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+        <div class="container card-md my-5 filter writing" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/borracha.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Borracha Faber Castell </h3>
+            <p class="card-text"> Borrachas Faber Castell, criadas com objetivo de maior rendimento na prática de apagar
+              erros de grafia. Acompanhadas com suportes, para evitar o acúmulo de resíduos.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
 
+          </div>
         </div>
+        <div class="container card-md my-5 filter writing" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/apontador.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Apontador </h3>
+            <p class="card-text"> Apontador com a melhor qualidade e eficiência, possuindo também uma pequena reserva
+              com
+              o objetivo de otimizar seu tempo.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter school" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/cola.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Cola </h3>
+            <p class="card-text"> Cola bastão Faber Castell, ótima opção para obter qualidade. </p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter school" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/corretivo.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Corretivo </h3>
+            <p class="card-text"> Fita corretiva Faber Castell, qualidade e economia.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter school" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/mochila.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Mochila </h3>
+            <p class="card-text"> Mochila Nike, conta com conforto, qualidade, espaço e elegância.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter school" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/regua.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Régua </h3>
+            <p class="card-text"> Régua de plástico 30cm, ótima opção para traçados perfeitos.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter writing" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/canetaAzul.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Caneta - Azul </h3>
+            <p class="card-text"> Kit com 3 canetas de cor azul, preço baixo e qualidade.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter writing" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/canetas.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Canetas - Coloridas </h3>
+            <p class="card-text"> Kit com 3 canetas de diferentes cores, custo benefício e ótima opção para quem gosta
+              de destaques.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter office" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/agendaComercial.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Agenda Comercial </h3>
+            <p class="card-text"> Agenda Comercial para todos os executivos que buscam eficiência e qualidade de tempo.
+            </p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter office" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/alfinetes.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Alfinetes </h3>
+            <p class="card-text"> Jogo de alfinetes, conta com diversas cores e tamanhos para seu uso diverso.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter office" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/cadernoAnotacoes.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Caderno de Anotações </h3>
+            <p class="card-text"> Caderno de anotações, para organizar seu ambiente de trabalho, suas metas e
+              propósitos.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter office" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/calculadora.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Calculadora </h3>
+            <p class="card-text"> Calculadora Elgin, qualidade e baixo custo para todos os gostos.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter office" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/clipes.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Clipe </h3>
+            <p class="card-text"> Caixa com 100 clipes, qualidade e bom custo para uso diverso. </p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+        <div class="container card-md my-5 filter office" style="width: 26.3rem;">
+          <img src="../../v3programação/Visual/image/grampeador.jpg" class="card-img-top" alt="..." height="400">
+          <div class="card-body">
+            <h3 class="card-title mx-auto"> Grampeador </h3>
+            <p class="card-text"> Grampeador para todos os usos, excelente opção para ter em suas ferramentas de
+              trabalho.</p>
+            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Reservar</a>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-   </div>
   </div>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -151,7 +253,11 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
 
-
+  <script src="../../v3programação/Visual/js/products.js"></script>
+  <footer>
+    <p class="my-3">Todos os direitos reservados a &copy;Papelaria Magnos</p>
+    <p>Instituto Federal Catarinense</p>
+  </footer>
 </body>
 
 </html>

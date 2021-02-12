@@ -6,6 +6,7 @@ class Contato {
 	private $objetivoContato;
 	private $telefone;
 	private $email;
+	private $mensagem;
 
 	public function setNome($nome) {
         $this -> nome = $nome;
@@ -13,6 +14,14 @@ class Contato {
 
 	public function getNome() {
 		return $this -> nome;
+	}
+
+	public function setMensagem($mensagem) {
+        $this -> mensagem = $mensagem;
+	}
+
+	public function getMensagem() {
+		return $this -> mensagem;
 	}
 
 	public function setTipoContato($tipoContato) {
@@ -61,6 +70,16 @@ class Contato {
 
 	public function VisualizarNumeroTelefone(){
 		return $telefone;
+	}
+	public function Cadastrar() {
+		try{
+			$sql = mysqli_connect("localhost", 'root', '');
+		}catch(PDOException $e){
+			 echo $e-> getMessage();
+		}
+		mysqli_select_db($sql, "cadastros");
+		$command = "insert into contato (nome, email, telefone, mensagem) values ('".$this->getNome()."','".$this->getEmail()."','".$this->getTelefone()."','".$this->getMensagem()."')";
+		mysqli_query($sql,$command);
 	}
 }
 ?>

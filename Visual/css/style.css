@@ -1,53 +1,213 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(243, 243, 243, 0.4);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(243, 243, 243, 0.4);
+  height: 100%;
 }
 
 p {
-    font-family: "Roboto Mono", monospace;
-    color: rgb(68, 68, 68);
-    font-size:1.2em;
-    text-align: justify;
-    
+  font-family: "Roboto Mono", monospace;
+  color: rgb(68, 68, 68);
+  font-size: 1.2em;
+  text-align: center;
 }
 
 h1 {
-    font-size: 60px;
-    font-family: "Oswald", sans-serif;
-    /*cor abaixo para o menu clean*/
-   color: #333333; 
-    /* color: #fff; */
-    margin-top: 25px;
-    margin-right: 5px;
-    letter-spacing: 0.4rem;
-    font-weight: 700;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  margin-top: 25px;
+  margin-right: 5px;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
 }
 
-h3{ 
-    margin-top: 15px;
-   font-size: 22px;
-   font-family: "Oswald", sans-serif;
-   color: #333333; 
-   font-weight: 500;
-   
+h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  font-weight: 500;
 }
-ul{
-    list-style-type: none;
-    padding:10px;
-    margin-bottom: 10px;
-    
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 10px;
 }
-.objectives ul li{
-    padding:8px;
-    font-family: "Roboto Mono", monospace;
-    color: rgb(68, 68, 68);
-    font-size:1.2em;
+.objectives ul li {
+  padding: 8px;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(68, 68, 68);
+  font-size: 1.2em;
 }
-h2 {
-
-   font-size: 30px;
-   font-family: "Oswald", sans-serif;
-   color: #333333; 
-   font-weight: 500;
+.objectives h2 {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  font-weight: 500;
+  margin-top: 30px;
 }
 
+.filial h2 {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.heading.heading-icon {
+  display: block;
+}
+.padding-lg {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+  padding-bottom: 55px;
+  padding-top: 55px;
+}
+.practice-area .inner {
+  border: 1px solid #999999;
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+.practice-area .inner h3 {
+  color: #3c3c3c;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+}
+.practice-area .inner p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.practice-area .inner img {
+  display: inline-block;
+}
+
+.our-webcoderskull .cnt-block {
+  float: left;
+  width: 100%;
+  background: rgb(233, 233, 233);
+  padding: 30px 20px;
+  text-align: center;
+  border: 2px solid #d5d5d5;
+  margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure {
+  width: 148px;
+  height: 148px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img {
+  width: 148px;
+  height: 148px;
+  border-radius: 100%;
+}
+.our-webcoderskull .cnt-block h3 {
+  color: #2a2a2a;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-transform: uppercase;
+}
+.our-webcoderskull .cnt-block h3 a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover {
+  color: #337ab7;
+}
+.our-webcoderskull .cnt-block p {
+  color: #2a2a2a;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.our-webcoderskull .cnt-block .follow-us {
+  margin: 20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li {
+  display: inline-block;
+  width: auto;
+  margin: 0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa {
+  font-size: 24px;
+  color: #767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover {
+  color: #025a8e;
+}
+a.list-group-item {
+  height: auto;
+  min-height: 220px;
+}
+a.list-group-item.active small {
+  color: #fff;
+}
+.stars {
+  margin: 20px auto 1px;
+}
+
+.gallery-title {
+  font-size: 36px;
+  color: #42b32f;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
+}
+.filter-button {
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.port-image {
+  width: 100%;
+}
+
+.gallery_product {
+  margin-bottom: 30px;
+}
+.space {
+  height: 180px;
+}
+footer {
+  background-color: #343a40;
+  padding: 10px;
+  margin-top: 30px;
+  height: 100%;
+}
+
+footer p {
+  color: white;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
